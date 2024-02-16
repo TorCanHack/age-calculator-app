@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 86%);
+  padding: 6rem 2rem;
+}
+body main {
+  background-color: hsl(0, 0%, 100%);
+  height: 30rem;
+  width: 22rem;
+  border-radius: 2rem 2rem 7rem 2rem;
+}
+body main #dob-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin-top: 2rem;
+}
+body main #dob-input span {
+  margin: 0 0 0 1.2rem;
+}
+body main #dob-input span input {
+  width: 5rem;
+  height: 3rem;
+  border: 1px solid hsl(0, 1%, 44%);
+  border-radius: 0.5rem 0.5rem;
+}
+body main #dob-input span #error {
+  color: hsl(0, 100%, 67%);
+  font-size: 0.7rem;
+}
+body main button {
+  background-color: hsl(259, 100%, 65%);
+  margin: 0 9rem;
+  border-radius: 50% 50%;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+}
+body main button svg {
+  height: 1.8rem;
+}
+body main .line {
+  border: 0.5px solid hsl(0, 0%, 86%);
+  margin: -2rem 0;
+}
+body main .year-print, body main .month-print, body main .day-print {
+  color: hsl(259, 100%, 65%);
+}
+body main .result {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+}
+body main .result span {
+  margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    width: 53rem !important;
+    height: 40rem !important;
+    padding: 1rem 3rem;
+  }
+  main #dob-input {
+    margin-bottom: -3rem;
+  }
+  main #day, main #month, main #year {
+    position: relative;
+    right: 4rem;
+  }
+  main label {
+    display: block;
+  }
+  main input {
+    width: 10rem !important;
+    height: 4.5rem !important;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  main button {
+    height: 6rem !important;
+    width: 6rem !important;
+    position: relative;
+    left: 32rem;
+    top: 1rem;
+  }
+  main .result {
+    text-align: left !important;
+    font-size: 6rem !important;
+    margin-top: 0.2rem;
+  }
+  main .result span {
+    margin-bottom: -3rem !important;
+  }
+}/*# sourceMappingURL=styles.css.map */

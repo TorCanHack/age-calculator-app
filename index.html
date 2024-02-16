@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="styles.css"/>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    
+    <article id="dob-input">
+       
+       <span id="day">
+        <label class="day-label">DAY</label>
+        <input type="datetime" class="day" placeholder="DD"/>
+        <p id="error" class="day-error"></p>
+       </span>
+      
+      <span id="month">
+        <label class="month-label">MONTH</label>
+        <input type="datetime" class="month" placeholder="MM"/>
+        <p id="error" class="month-error"></p>
+      </span>
+
+      <span id="year">
+        <label class="year-label">YEAR</label>
+        <input type="datetime" class="year" placeholder="YYYY"/>
+        <p id="error" class="year-error"></p>
+      </span>
+
+    </article>
+
+    <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+    <div class="line"></div>
+    <p class="result">
+      <span class="year-print">--</span> years <br/>
+      <span class="month-print">--</span> months <br/>
+      <span class="day-print">--</span> days <br/>
+    </p>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

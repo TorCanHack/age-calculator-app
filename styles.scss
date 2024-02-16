@@ -1,0 +1,141 @@
+$primaryPurple: hsl(259, 100%, 65%);
+$primaryLightRed: hsl(0, 100%, 67%);
+$neutralWhite: hsl(0, 0%, 100%);
+$neutralOffWhite: hsl(0, 0%, 94%);
+$neutralLightGrey: hsl(0, 0%, 86%);
+$neutralSmokeyGrey: hsl(0, 1%, 44%);
+$neutralOffBlack: hsl(0, 0%, 8%);
+$mainFont: "Poppins";
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: $mainFont;
+   
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $neutralLightGrey;
+    padding: 6rem 2rem;
+
+    main {
+        
+        background-color: $neutralWhite;
+        height: 30rem;
+        width: 22rem;
+        border-radius: 2rem 2rem 7rem 2rem;
+        
+
+       #dob-input{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:start;
+            margin-top: 2rem;
+            
+
+            span {
+                margin: 0 0 0 1.2rem;
+
+                input {
+                    width: 5rem;
+                    height: 3rem;
+                    border: 1px solid $neutralSmokeyGrey;
+                    border-radius: .5rem .5rem;            
+                }  
+
+                #error {
+                    color: $primaryLightRed;
+                    font-size: .7rem;
+                }
+            }
+                        
+        }
+
+        button {
+            background-color: $primaryPurple;
+            margin: 0 9rem;
+            border-radius: 50% 50%;
+            height: 4rem;
+            width: 4rem;
+            border: none;
+
+            svg {
+                height: 1.8rem;
+            }
+        
+        }
+
+        .line {
+            border: .5px solid $neutralLightGrey;
+            margin: -2rem 0;
+        }
+
+        .year-print, .month-print, .day-print {
+            color: $primaryPurple;
+        }
+
+        .result {
+            font-size: 3.5rem;
+            font-weight: 900;
+            font-style: italic;
+            text-align: center;
+
+            span {
+                margin-bottom: 5rem;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    main {
+        width: 53rem !important;
+        height: 40rem !important;
+        padding: 1rem 3rem;
+
+        #dob-input {
+            margin-bottom: -3rem;
+        }
+        #day, #month, #year {
+            position: relative;
+            right: 4rem;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            width: 10rem !important;
+            height: 4.5rem !important;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        button {
+            height: 6rem !important;
+            width: 6rem !important;
+            position: relative;
+            left: 32rem;
+            top: 1rem;
+        }
+        .result {
+            text-align: left !important;
+            font-size: 6rem !important;
+            margin-top: 0.2rem;
+
+            span {
+                margin-bottom: -3rem !important;
+            }
+        }
+    }
+    
+}

@@ -71,6 +71,7 @@ body main .result span {
     width: 53rem !important;
     height: 40rem !important;
     padding: 1rem 3rem;
+    margin-top: 3rem !important;
   }
   main #dob-input {
     margin-bottom: -3rem;
